@@ -1,0 +1,79 @@
+package prestamo;
+
+/**
+ *
+ * @author sergi
+ */
+public class Prestamo {
+
+    private String idEmpleado;
+    private String nombreEmpleado;
+    private String departamento;
+    private String fechaSolicitud;
+    private String tipoVehiculo;
+    private String placaVehiculo;
+
+    public Prestamo (String idEmpleado, String nombreEmpleado, String departamento, String fechaSolicitud, String tipoVehiculo, String placaVehiculo) {
+        this.idEmpleado = idEmpleado;
+        this.nombreEmpleado = nombreEmpleado;
+        this.departamento = departamento;
+        this.fechaSolicitud = fechaSolicitud;
+        this.tipoVehiculo = tipoVehiculo;
+        this.placaVehiculo = placaVehiculo;
+    }
+
+    public String getIdEmpleado() {
+        return idEmpleado;
+    }
+
+    public String getDepartamento() {
+        return departamento;
+    }
+
+    public String getNombreEmpleado() {
+        return nombreEmpleado;
+    }
+
+    public void setNombreEmpleado(String nombreEmpleado) {
+        this.nombreEmpleado = nombreEmpleado;
+    }
+
+    public String getFechaSolicitud() {
+        return fechaSolicitud;
+    }
+
+    public void setFechaSolicitud(String fechaSolicitud) {
+        this.fechaSolicitud = fechaSolicitud;
+    }
+
+    public String getTipoVehiculo() {
+        return tipoVehiculo;
+    }
+
+    public void setTipoVehiculo(String tipoVehiculo) {
+        this.tipoVehiculo = tipoVehiculo;
+    }
+
+    public String getPlacaVehiculo() {
+        return placaVehiculo;
+    }
+
+    public void setPlacaVehiculo(String placaVehiculo) {
+        this.placaVehiculo = placaVehiculo;
+    }
+
+    @Override
+    public String toString() {
+        return "Préstamo{" +
+                "ID Empleado='" + idEmpleado + '\'' +
+                ", Nombre='" + nombreEmpleado + '\'' +
+                ", Departamento='" + departamento + '\'' +
+                ", Fecha='" + fechaSolicitud + '\'' +
+                ", Tipo Vehículo='" + tipoVehiculo + '\'' +
+                ", Placa='" + placaVehiculo + '\'' +
+                '}';
+    }
+}
+
+
+
